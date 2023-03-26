@@ -7,6 +7,10 @@
     <title>SuperHeroes</title>
 </head>
 <body>
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
     <h1>Creación de SuperHeroes</h1>
 
     <form action="{{url('/Superhero')}}" method="post" enctype="multipart/form-data">
@@ -29,5 +33,8 @@
         <br>
         <input type="submit" value="Enviar">
     </form>
+
+</div>
+@endsection
 </body>
 </html>

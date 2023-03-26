@@ -31,3 +31,6 @@ Route::get('/Superhero/eliminar', function () {
 });
 
 Route::resource('Superhero',SuperheroController::class);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
